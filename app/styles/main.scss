@@ -1,0 +1,106 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: #f1f1f1;
+}
+
+/* Display weather styles*/
+.weather-info {
+  padding: 30px;
+  text-align: center;
+  font-size: 17px;
+  background: #ced2d8;
+  border-radius: 5px;
+  margin-top: 50px;
+  box-shadow: 2px 2px 16px 0px gray;
+
+  h2{
+    font-size: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #aaa;
+    margin: 0 0 10px;
+  }
+  i{
+    display: block;
+    color: dimgrey;
+    line-height: 0.7;
+  }
+  .icon{
+    width: 60px;
+    height: auto;
+    margin: -5px auto;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .temp{
+    font-size: 25px;
+    line-height: 1;
+    margin-left: -5px;
+  }
+
+  .details{
+    margin-top: -10px;
+  }
+
+  .kelvin-vs-celsius{
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    font-size: 15px;
+    vertical-align: top;
+    padding-top: 10px;
+
+    span{
+      cursor: pointer;
+      color: #969696;
+
+      &.active{
+        color: #333;
+      }
+
+      & + span{
+        margin-left: 3px;
+        padding-left: 3px;
+        border-left: 1px solid #9e9e9e;
+      }
+    }
+  }
+
+  .speed{
+    font-size: 12px;
+  }
+
+  .wind{
+    box-shadow: 1px 0 0 0px #444 inset;
+    min-height: 85px;
+
+    .direction{
+      display: block;
+      height: 40px;
+      width: 40px;
+      margin: 10px auto 0 auto;
+
+      .glyphicon{
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+body > .container{
+  min-height: 750px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 20px;
+  color: #9e9e9e;
+  border-top: 1px solid #e5e5e5;
+}
+
